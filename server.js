@@ -5,7 +5,11 @@ const cors = require("cors");
 const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: "https://ravi-ai-assistant.vercel.app/"
+  }
+));
 app.use(express.json());
 
 // Initialize Gemini API client
