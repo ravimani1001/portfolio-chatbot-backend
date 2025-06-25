@@ -7,7 +7,7 @@ const { GoogleGenAI } = require("@google/genai");
 const app = express();
 app.use(cors(
   {
-    origin: "https://ravi-ai-assistant.vercel.app/"
+    origin: "https://ravi-ai-assistant.vercel.app"
   }
 ));
 app.use(express.json());
